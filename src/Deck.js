@@ -7,7 +7,8 @@ class Deck extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      deck: null
+      deck: null,
+      drawn: []
     }
   }
 
