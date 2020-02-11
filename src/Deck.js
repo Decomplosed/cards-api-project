@@ -10,6 +10,7 @@ class Deck extends Component {
       deck: null,
       drawn: []
     }
+    this.getCard = this.getCard.bind(this)
   }
 
   async componentDidMount() {
