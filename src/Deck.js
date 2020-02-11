@@ -1,8 +1,19 @@
 import React, { Component } from 'react'
 
 class Deck extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      deck: null
+    }
+  }
+
   render() {
-    return <div></div>
+    return (
+      <div>
+        <h1>Card dealer</h1>
+      </div>
+    )
   }
 }
 
