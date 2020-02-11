@@ -29,7 +29,11 @@ class Deck extends Component {
     this.setState(st => ({
       drawn: [
         ...st.drawn,
-        { id: card.code, image: card.image, name: `${card.suit} ${card.value}` }
+        {
+          id: card.code,
+          image: card.image,
+          name: `${card.suit} of ${card.value}`
+        }
       ]
     }))
   }
