@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-const API_URL = 'https://deckofcardsapi.com/api/deck/new/shuffle'
+const API_URL = 'https://deckofcardsapi.com/api/deck/new/shuffle/'
 
 class Deck extends Component {
   constructor(props) {
