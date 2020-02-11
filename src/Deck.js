@@ -22,14 +22,10 @@ class Deck extends Component {
     let deck_id = this.state.deck.deck_id
     try {
       let cardUrl = `${API_BASE_URL}/${deck_id}/draw/`
-      let cardRes = await axios.get(
-        'https://deckofcardsapi.com/api/deck/ng054ddoc7ia/draw/'
-      )
-
-      if (cardRes.data.remaining === 0) {
+      let cardRes = await axios.get(cardUrl)
+      if (!cardRes.data.success) {
         throw new Error('No card remaining')
       }
-      console.log(cardRes.data)
       let card = cardRes.data.cards[0]
       this.setState(st => ({
         drawn: [
