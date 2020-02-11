@@ -51,7 +51,7 @@ class Deck extends Component {
       <div>
         <h1>Card dealer</h1>
         <button onClick={this.getCard}>Get card!</button>
-        {cards}
+        <div className='Deck-cardarea'>{cards}</div>
       </div>
     )
   }
