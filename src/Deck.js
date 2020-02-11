@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+const API_URL = 'https://deckofcardsapi.com/api/deck/new/shuffle'
+
 class Deck extends Component {
   constructor(props) {
     super(props)
